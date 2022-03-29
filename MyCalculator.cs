@@ -80,15 +80,11 @@ namespace Calculator
 				}
 				else if (c == '+' || c == '-' || c == '*' || c == '/') // operator
 				{
-					if (stack.Count == 0 || GetPriority(stack.Peek()) < GetPriority(c))
-					{
-						stack.Push(c);
-					}
-					else
+					if (stack.Count > 0 && GetPriority(stack.Peek()) >= GetPriority(c))
 					{
 						sb.Append(stack.Pop().ToString() + ' ');
-						stack.Push(c);
 					}
+					stack.Push(c);
 				}
 				else if (c == '(')
 				{
