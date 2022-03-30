@@ -1,7 +1,9 @@
 # Simple calculator
 
 Infix and postfix expressions
+
 can process add, reduce, multiply, devide and parenthesis
+
 [Algo Description](https://web.stonehill.edu/compsci/CS104/Stuff/Infix%20and%20%20postfix%20expressions.pdf)
 
 ## Postfix Evaluation
